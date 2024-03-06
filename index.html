@@ -1,0 +1,824 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+    google.load("jquery", "1.3.2");
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6YQVECV1ZB"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-6YQVECV1ZB');
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic'
+    rel='stylesheet' type='text/css'>
+
+<!-- <div class="topnav" id="myTopnav">
+    <a href="http://infosec.pusan.ac.kr/"><img width="100%" src="assets/logo/infosec_logo.png"></a>
+    <a href="https://www.smartm2m.co.kr/"><img width="100%" src="assets/logo/smartm2m_blk_logo.png"></a>
+    <a href="https://add.re.kr/"><img width="100%" src="assets/logo/add_logo.png"></a>
+</div> -->
+
+<head>
+    <title>Recent Developments in Recommender Systems: A Survey</title>
+    <meta property="og:description"
+        content="Recent Developments in Recommender Systems: A Survey" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="container">
+
+        <div id="avs" class="modal">
+            <p>Available soon...</p>
+        </div>
+
+        <div class="paper-title">
+            <h1>Recent Developments in Recommender Systems: A Survey</h1>
+            <h2>IEEE Computational Intelligence Magazine</h2>
+        </div>
+
+        <div id="authors">
+            <div class="author-row">
+                <div class="col-5 text-center">
+                    <a href="https://scholar.google.com/citations?user=jtogpBkAAAAJ&hl=zh-CN&oi=sra">Yang Li</a>
+                    <sup>1</sup>
+                </div>
+                <div>
+                    <div class="col-5 text-center">
+                        Kangbo Liu
+                        <sup>1</sup>
+                    </div>
+                    <div>
+                        <div class="col-5 text-center">
+                            <a href="https://scholar.google.com/citations?user=-eQVwhEAAAAJ&hl=zh-CN&oi=sra">Ranjan Satapathy</a>
+                            <sup>2</sup>
+                        </div>
+                        <div>
+                            <div class="col-5 text-center">
+                                <a href="https://scholar.google.com/citations?user=cdT_WMMAAAAJ&hl=zh-CN&oi=sra">Suhang Wang</a>
+                                <sup>2</sup>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="col-5 text-center">
+                                <a href="https://scholar.google.com/citations?user=ilSYpW0AAAAJ&hl=zh-CN&oi=sra">Erik Cambria</a>
+                                <sup>4</sup>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="affil-row">
+                <div class="col-4 text-center">
+                    <sup>1</sup>
+                    Northwestern Polytechnical University
+                </div>
+                <div class="col-4 text-center">
+                    <sup>2</sup>
+                    Agency for Science, Technology and Research
+                </div>
+                <div class="col-4 text-center">
+                    <sup>3</sup>
+                    Pennsylvania State University
+                </div>
+                <div class="col-4 text-center">
+                    <sup>4</sup>
+                    Nanyang Technological University
+                </div>
+            </div>
+        </div>
+        <!-- <div style="clear: both">
+            <div class="paper-btn-parent">
+                <a class="supp-btn"
+                    href="https://openaccess.thecvf.com/content/ICCV2023/html/Suryanto_ACTIVE_Towards_Highly_Transferable_3D_Physical_Camouflage_for_Universal_and_ICCV_2023_paper.html">
+                    <span class="material-icons"> description </span>
+                    Paper
+                </a>
+                <a class="supp-btn" href="./bib.txt">
+                    <span class="material-icons"> school </span>
+                    BibTeX
+                </a>
+                <a class="supp-btn" href="./assets/poster/ACTIVE-ICCV2023-Poster-Final-Resized.pdf">
+                    <span class="material-icons"> image </span>
+                    Poster
+                </a>
+                <a class="supp-btn" href="https://www.youtube.com/watch?v=Za3aquQ3xiI">
+                    <span class="material-icons"> movie </span>
+                    Presentation
+                </a>
+            </div>
+        </div> -->
+        <section id="abstract">
+            <h2>Abstract</h2>
+            <hr>
+            <p>
+                In this technical survey, the latest advancements in the field of recommender systems are comprehensively summarized. 
+                The objective of this study is to provide an overview of the current state-of-the-art in the field and highlight the 
+                latest trends in the development of recommender systems. It starts with a comprehensive summary of the main taxonomy 
+                of recommender systems, including personalized and group recommender systems. In addition, the survey analyzes the 
+                robustness, data bias, and fairness issues in recommender systems, summarizing the evaluation metrics used to assess 
+                the performance of these systems. Finally, it provides insights into the latest trends in the development of recommender
+                systems and highlights the new directions for future research in the field. 
+            </p>
+
+            <!-- <table>
+                <thead>
+                    <tr>
+                        <th align="center">Photo-Realistic Simulation Demo</th>
+                        <th align="center">Real World Demo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="center">
+                            <video class="centered" width="95%" muted loop autoplay>
+                                <source src="assets/video/demo/photo-rendering-demo.webm" type="video/webm"
+                                    alter="real Video">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        <td align="center">
+                            <video class="centered" width="95%" muted loop autoplay>
+                                <source src="assets/video/demo/realworld.webm" type="video/webm" alter="photo Video">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                    </tr>
+                </tbody>
+            </table> -->
+
+
+        </section>
+
+        <br>
+        <br>
+
+        <section id="results">
+            <h2>Framework</h2>
+            <hr>
+            <p> 
+                This paper aims to offer a thorough overview of recommender systems, including classification, implementation, and evaluation metrics.
+                The following figure shows the framework of this review paper.
+            </p>
+            <section id="teaser">
+                <figure style="width: 100%;">
+                    <a href="assets/img/framework.jpg">
+                        <img width="100%" style="background-color:white" src="assets/img/framework.jpg">
+                    </a>
+                    <p class="caption" style="margin-bottom: 1px;">
+                        <b>Left side:</b> elements and their explanations.<br> 
+                        <b>Right side:</b> recommender systems discussed in this paper.<br>      
+                        <b>II-A: </b>Collaborative Filtering (CF)-based RS; <b>II-B:</b> Content-based RS; <b>II-C: </b> Knowledge-based RS; <b>II-D: </b> LLM-based RS; <b>II-E: </b> Hybrid RS; <br>
+                        <b>III-A & B:</b>group recommendation; <b>III-C:</b> bundle recommendation; <br>
+                        <b>IV-A:</b> robustness; <b>IV-B:</b> data bias;<b>IV-C:</b>fairness.
+                </figure>
+            </section>
+
+            <br>
+            <br>
+
+            <h2>Personalized Recommender Systems</h2>
+            <hr>
+            <p>
+                The emergence of deep learning and the vast availability of online data has made personalized recommender systems more prevalent, significantly enhancing the ease and efficiency with which people discover new experiences. 
+                These systems are commonly categorized into three main types: <b>Collaborative Filtering-based</b>, <b>Context-aware-based</b> and <b>Hybrid</b>. 
+                Recommender systems have evolved to integrate external knowledge, resulting in <b>knowledge-based</b> recommender systems and the leveraging of <b>LLMs</b> to enhance recommendation efficiency. 
+                This paper aims to delve deeper into these advancements, analyzing knowledge-based and LLM-based recommender systems, respectively.
+            </p>
+                <p style="font-size: 21px;"><b>Filtering Based RS</b></p>
+                <hr width="17%" />
+               
+                <div class="flex-row">
+                    <div class="flex-row" style="width: 65%;">
+                        <p style="width: 80%;">
+                            <b>Collaborative filtering (CF)</b> leverages the collective knowledge of a large pool of users to  predict an individual user's preferences or opinions, based on the assumption that users who share similar preferences and behaviors will have similar opinions. 
+                            This method is driven by user profiles based on <b>historical interactions</b>, such as browsing history, past purchases, or songs played previously. 
+                            CF has <b>memory-based and model-based</b> approaches. 
+                            The input to the recommendation scoring function is the user interaction data with an item (e.g., user-item ratings or  interactions). 
+                        </p>
+                    </div>
+                    <td>
+                        <figure style="width: 30%;">
+                            <a href="assets/img/IIA.jpg">
+                                <img width="100%" style="background-color:white" src="assets/img/IIA.jpg">
+                            </a> 
+                        </figure>
+                </div>
+
+                    <p style="font-size: 18px;"> <b>Memory-based CF</b> </p>
+                    <!-- <hr width="14.5%" /> -->
+                        <p>
+                        Memory-based CF utilizes user or item similarities for recommendations.<br>
+                        Recent research on Memory-based CF has focused on refining memory-based CF by exploring new similarity measures, addressing scalability challenges, and considering their integration into hybrid recommendation systems. 
+                        Memory-based CF, while not the sole focus of research, still plays a valuable role in providing personalized recommendations, particularly with smaller datasets or when simplicity and interpretability are prioritized.
+                        </p>
+
+                    <p style="font-size: 18px;"> <b>Model-based CF</b> </p>
+                    <!-- <hr width="12.5%" /> -->
+                        <p>
+                            Model-based CF predicts user preferences based on relationships between them and items.
+                            With the success of Deep Learning and Graph Neural Network, there is increasing interest in the application of neural networks.
+                        </p>
+
+                        <div class="flex-row">
+                            <div class="flex-row" style="width: 40%;">
+                                <p style="width: 100%;">
+                                    Table 1 evaluates the performance of the RS model, which is based on a GNN, on the <a href="https://scholar.google.com/citations?user=-eQVwhEAAAAJ&hl=zh-CN&oi=sra">MovieLens 1M</a> dataset. 
+                                    NDCG@k and Recall@k are selected as the evaluation criteria, where k denotes the system’s TOP-k recommendation.
+                                    To standardize the data, model results are rounded to two decimal places. 
+                                    The table shows five basic models and two combined models, which belong to the categories of graph collaborative filtering, graph convolutional neural networks, and self-supervised graph learning.
+                                    Model-based CF enhances recommendation accuracy by developing various models to extract in-depth insights from user-item interaction data. Despite significant advancements in model-based CFs, there remains a need for new models to augment the interpretability, computational efficiency, and RS accuracy.
+                                    It is worth noting that the links of graphs offer a convenient option for mining deep information through multi-hop for the interaction data between users and items. As a result, the GNN will probably become the mainstay of subsequent research.
+                                </p>
+                            </div>
+                            <td>
+                                <figure style="width: 55%;">
+                                    <a href="assets/img/table1.jpg">
+                                        <img width="100%" style="background-color:white" src="assets/img/table1.jpg">
+                                    </a>
+                                    <p class="caption" style="margin-bottom: 1px;">
+                                        Table 1 performance of GNN-Based RS model on MovieLens 1M dataset.
+                                    </p> 
+                                </figure>
+                        </div>
+                    
+                    <p style="font-size: 18px;"> <b>Context-aware-based CF</b> </p>
+                    <!-- <hr width="20%" />    -->
+                        <p>
+                            To enhance the decision-making capabilities of an RS, it is important to consider contextual information such as time, location, social status, mood, weather, day type, and language.
+                            User activity and contextual information are closely intertwined, with reciprocal effects on each other. 
+                            Unlike memory-based  and model-based CF recommendation algorithms, context-aware-based CF requires user and item descriptive information as input.
+                            Contextual information can be sourced such as from smart devices providing geolocation data and companion information, or directly from users through their interests.
+                        </p>
+                        <p>
+                            Recent advancements in contextual information, facilitated by the application of statistical, data mining, and particularly artificial intelligence-based methods, have enabled proactive collection by analyzing user activities within the system, eliminating reliance on self-reported data.
+                            Contextual features typically exhibit greater complexity and dynamism than user-item interaction data. For instance, weather conditions, encompassing variables like temperature, humidity, wind, and precipitation, change over time across various scales. 
+                            The context derived from smart devices is even more intricate, encompassing sensors such as accelerometers, gyroscopes, magnetometers, GPS, and biometric sensors, potentially amounting to around 600 variables.
+                            Incorporating this information into a recommender system poses a significant challenge.
+                        </p>
+
+                        <div class="flex-row">
+                            <div class="flex-row" style="width: 55%;">
+                                <p style="width: 100%;">
+                                    Table 2 categorizes relevant work.
+                                    Context-aware-based CF requires datasets to provide context information, including descriptive information of users and items, so that it can be mined to assist recommendations. 
+                                    Context information is difficult to combine with deep learning, and will be a focus of future research.
+                                </p>
+                            </div>
+                            <td>
+                                <figure style="width: 40%;">
+                                    <a href="assets/img/table2.jpg">
+                                        <img width="100%" style="background-color:white" src="assets/img/table2.jpg">
+                                    </a>
+                                    <p class="caption" style="margin-bottom: 1px;">
+                                        Table 2 summarization of Contextual-aware CF.
+                                    </p> 
+                                </figure>
+                        </div>
+                    <br>
+                
+                <p style="font-size: 21px;"><b>Content Based RS</b></p>
+                <hr width="17%" />
+                <div class="flex-row">
+                    <div class="flex-row" style="width: 70%;">
+                        <p style="width: 100%;">
+                            Content-based RS treats recommendations as a user-specific classification problem by learning a classifier based on item features, and provides a more personal recommendation. 
+                            The RS uses two types of information, the user preference model and user interaction history, to obtain the features of items. 
+                            Text data are an important source of feature learning. 
+
+                        </p>
+                    </div>
+                    <td>
+                        <figure style="width: 25%;">
+                            <a href="assets/img/IIB.jpg">
+                                <img width="100%" style="background-color:white" src="assets/img/IIB.jpg">
+                            </a> 
+                        </figure>
+                </div>
+
+                        <p>
+                            A notable advantage of Content-based RS is that it allows for item recommendations solely based on their content, without user ratings. 
+                            Side information can be metadata or user-generated content, and traditionally consists of descriptions of items or full-text indexing of textual items.
+                            Content-based RS has evolved to incorporate a wide range of techniques and data sources, including deep learning, sentiment analysis, and Heterogeneous Information Network. 
+                            These advancements have contributed to the development of more accurate and personalized recommendation systems that take into account not only the content but also the context and user preferences, ultimately improving the user experience.
+                        </p>
+                        <br>
+
+                <p style="font-size: 21px;"><b>Knowledge-based RS</b></p>
+                <hr width="20%" />
+                <div class="flex-row">
+                    <div class="flex-row" style="width: 60%;">
+                        <p style="width: 100%;">
+                            Different from CF-based and content-based RS, knowledge-based RS does not rely on user-item interaction history and is commonly used in complex domains where items are not frequently purchased, such as cars, in which users may have constraints such as a budget. 
+                            The key factor is domain knowledge, which can include users, items, and their interaction. 
+                            Therefore, the input to the recommendation scoring function requires knowledge in addition to the interaction and description information of users and items.
+
+                        </p>
+                    </div>
+                    <td>
+                        <figure style="width: 35%;">
+                            <a href="assets/img/IIC.png">
+                                <img width="100%" style="background-color:white" src="assets/img/IIC.png">
+                            </a> 
+                        </figure>
+                </div>
+                        <p>
+                            Knowledge-based RS can use both external knowledge and knowledge generated from datasets, which helps to overcome challenges such as cold starts and grey sheep
+                            Figure 2 shows that domain knowledge can be located on both the user and item sides.
+                        </p>
+                        <figure style="width: 100%;">
+                            <a href="assets/img/fig1.jpg">
+                                <img width="100%" style="background-color:white" src="assets/img/fig1.jpg">
+                            </a>
+                            <p class="caption" style="margin-bottom: 1px;">
+                                Fig. 2 Example of knowledge-based recommender system
+                            </p> 
+                        </figure>
+                        <p>
+                            Knowledge-based RS has garnered significant attention due to its versatility in a wide range of domains. 
+                            Knowledge-based RS demonstrate the versatility and potential of knowledge-based RS in different domains, such as e-commerce, healthcare, academia, and software development.
+                            These applications demonstrate the potential of integrating domain knowledge into RS to make more informed and personalized recommendations. 
+                        </p>
+
+                        <p style="font-size: 18px;"> <b>Knowledge Graph-based RS</b> </p>
+                        <hr width="22.5%" /> 
+                            <p>
+                                Knowledge graph-based RS is a sub-class of knowledge-based RS that leverages the information contained in a knowledge graph to make better recommendations. 
+                                The knowledge graph is a collection of entities and their relationships, including objects, relations, and situations. 
+                                It provides additional information about the recommender system and enhances the quality of recommendations. 
+                                
+                            </p>
+
+                            <div class="flex-row">
+                                <div class="flex-row" style="width: 55%;">
+                                    <p style="width: 100%;">
+                                        The application of knowledge graphs in RS has gained significant attention in recent years and thus become a popular research topic. 
+                                        By integrating the knowledge graph into the recommender system, more evidence can be gathered to improve the quality of recommendations.
+                                        Knowledge graphs include YAGO, Freebase, DBpedia, NELL, and Wikidata,  which cover a wide range of domains. 
+                                        Specialized knowledge graphs include Bio2RDF in biology, Knowlife for biomedical information, and Satori for production. 
+                                        Table 3 provides further details on these knowledge graphs.
+                                        A knowledge graph is made up of entity-relation-entity triples (h,r,t), with head h, relation r, and tail t, and can be utilized in three ways in a recommender system: knowledge graph embedding, path pattern learning, and hybrid embedding.
+                                        Existing knowledge can be encoded into a higher-level representation, knowledge graph embedding (KGE). 
+                                    </p>
+                                </div>
+                                <td>
+                                    <figure style="width: 35%;">
+                                        <a href="assets/img/table3.jpg">
+                                            <img width="100%" style="background-color:white" src="assets/img/table3.jpg">
+                                        </a>
+                                        <p>
+                                            Table 3 current knowledge graphs
+                                        </p> 
+                                    </figure>
+                            </div>
+                            <p>
+                                Knowledge graph-based RS offers a promising avenue for improving the quality and relevance of recommendations by tapping into a wealth of structured knowledge. 
+                                As the field continues to evolve, researchers are exploring innovative ways to harness knowledge graphs and enhance the performance of recommendation systems across various domains.
+                            </p>
+
+                        <p style="font-size: 18px;"> <b>Path-based RS</b> </p>
+                            <hr width="12%" /> 
+                            <p>
+                                Path-based RS leverages the connectivity patterns between entities in a knowledge graph to enrich the side information of users or items, by evaluating their semantic similarity through different meta-paths. 
+                                There are three types of entity similarity: User-User, Item-Item, and User-Item.
+                            </p>
+                            <P>
+                                Path-based method has been widely applied in recommendation systems to leverage the connectivity patterns in the knowledge graph for better recommendation results. 
+                                Different models have used different similarity evaluation methods, such as PathSim, Hetesim, and LSTM, to calculate the semantic similarity between entities and generate recommendations.
+                            </P>
+                            <br>
+
+                <p style="font-size: 21px;"><b>LLM-based RS</b></p>
+                <hr width="13.5%" />
+                    <div class="flex-row">
+                        <div class="flex-row">
+                            <div class="flex-row" style="width: 70%;">
+                                <p style="width: 100%;">
+                                    With the advancement of Generative Pretraining Transformer (GPT) technology, large-scale language models (LLMs) such as Bard, ChatGPT, and LLaMa have appeared. 
+                                    LLM-based RS must be fine-tuned on the trained LLM, based on the interaction and description of users and items. 
+                                    Conversational recommendation systems that generate recommendations through dialogue have gained prominence.
+                                </p>
+                            </div>
+                            <td>
+                                <figure style="width: 25%;">
+                                    <a href="assets/img/IIE.png">
+                                        <img width="100%" style="background-color:white" src="assets/img/IIE.png">
+                                    </a> 
+                                </figure>
+                        </div>
+                    </div>
+                    <P>
+                        Due to the huge knowledge capacity and human-like interaction ability of LLM, it can improve the accuracy and interpretability of an RS, and to a certain extent eliminate the cold-start problem. 
+                        However, the current LLM model is relatively expensive, and the training cost is high; hence, a lightweight LLM is needed.
+                    </P>
+                    <br>
+
+                <p style="font-size: 21px;"><b>Hybrid RS</b></p>
+                <hr width="10%" />
+                
+
+                    <div class="flex-row">
+                        <div class="flex-row">
+                            <div class="flex-row" style="width: 80%;">
+                                <p style="width: 100%;">
+                                    The development of recommender systems has increased their complexity, particularly in practical applications. 
+                                    To achieve real-time, accurate recommendations, these systems often require the integration of various data sources. 
+                                    The use of deep learning has enabled more effective fusion of multisource information, such as context and content, in hybrid recommender systems, the Figure on the right shows a Hybrid RS, 
+                                    where the dashed box is the intermediate function, and a recommendation scoring function obtains the final result by fusing two or more intermediate functions.
+                                </p>
+                            </div>
+                            <td>
+                                <figure style="width: 12.5%;">
+                                    <a href="assets/img/IID.png">
+                                        <img width="100%" style="background-color:white" src="assets/img/IID.png">
+                                    </a> 
+                                </figure>
+                        </div>
+                    </div>
+
+
+                    <figure style="width: 85%;">
+                        <a href="assets/img/table4.jpg">
+                            <img width="100%" style="background-color:white" src="assets/img/table4.jpg">
+                        </a>
+                        <p>
+                            Table 4 Hybrid RS based on model and data source
+                        </p> 
+                     </figure>
+            
+                    <P>
+                        Table 4 lists hybrid recommender systems, along with their core model, composition, information source, and applications, from which it can be seen that most work utilizes a CF-based optimization model. 
+                        Contextual information includes features such as historical behavior, social connections, and personal characteristics, highlighting the importance of incorporating multiple data sources for effective recommendations.
+                    </P>
+                    <br>
+                    <br>        
+                
+            <h2>Group Recommender Systems</h2>
+            <hr>
+                <div class="flex-row">
+                    <div class="flex-row">
+                        <div class="flex-row" style="width: 70%;">
+                            <p style="width: 100%;">
+                                Group recommendation systems provide recommendations to groups of users with similar preferences. 
+                                A group may have shared interests or may be in the same environment.
+                                Group recommendation has both memory-based and model-based approaches.
+                                A recommendation must be based on the interaction data of groups, items, and users.
+                                Interaction among the group can be minimal or nonexistent in the memory-based approach, and only preferences are aggregated. 
+                                The modelbased approach seeks a comprehensive representation of a group using machine learning and generally shows better recommendation performance.
+                            </p>
+                        </div>
+                        <td>
+                            <figure style="width: 25%;">
+                                <a href="assets/img/IIIA.jpg">
+                                    <img width="100%" style="background-color:white" src="assets/img/IIIA.jpg">
+                                </a> 
+                            </figure>
+                    </div>
+                </div>
+
+                <P>
+                    Bundle recommendation leverages interaction data encompassing bundles, individual items, and user behavior through deep learning. 
+                    While similar, group recommendation systems suggest items to a group of users with shared preferences or interests, aiming to meet their collective needs, while bundle systems recommend predefined packages or sets of items, considering the synergy or co-occurrence within them.
+                </P>
+                <p style="font-size: 21px;"><b>Memory-based Approach</b></p>
+                <hr width="24%" />
+                    <p>
+                        Preference aggregation is the predominant method in group recommendation systems. 
+                        This approach is typically categorized into result aggregation and profile aggregation methods.
+                        Result aggregation is to aggregate all users’ recommendation results to form a comprehensive group recommendation.
+                        Profile aggregation generates recommendations for a virtual user, an abstraction derived from the group.
+                    </p>
+                    <p>
+                        Various aggregation strategies are available for group recommendations, each with unique advantages and limitations. 
+                        The appropriateness of a strategy is contingent on the degree of similarity or diversity in group preferences. 
+                    </p>
+                    <br>
+                
+                <p style="font-size: 21px;"><b>Model-based Approach</b></p>
+                <hr width="22%" />
+                    <P>
+                        Model-based approaches utilize machine learning techniques, including information fusion, game theory, and probabilistic models, to distill relevant features from user interactions. 
+                        Notably, deep learning has emerged as a vital element in group recommendation, enhancing recommendation performance through the integration of external features such as social attributes, group descriptive characteristics, and common knowledge. 
+                    </P>
+                    <P>
+                        Despite the numerous deep learning-based methods proposed for group recommendation, the recommendation performance remains unsatisfactory due to the sparse and diverse preferences of group users.
+                        Further research is needed to address these challenges and enhance the recommendation performance.
+                    </P>
+                    <br>
+                
+                <p style="font-size: 21px;"><b>Bundle Recommendation</b></p>
+                <hr width="24%" />
+                    <div class="flex-row">
+                        <div class="flex-row">
+                            <div class="flex-row" style="width: 70%;">
+                                <p style="width: 100%;">
+                                    Bundled recommendations can reduce the time spent by users, and increase revenue by selling two or more items as a whole. 
+                                    A typical example occurred in the 1980s when Walmart displayed diapers and beer together.
+                                    Group and bundled recommendations have commonalities, with bundled recommendations essentially suggesting a combination of items to users.
+                                    Due to dataset limitations, bundle recommendation can only give recommendations based on the interaction information of users, items, and bundles. 
+                                </p>
+                            </div>
+                            <td>
+                                <figure style="width: 25%;">
+                                    <a href="assets/img/IIIC.jpg">
+                                        <img width="100%" style="background-color:white" src="assets/img/IIIC.jpg">
+                                    </a> 
+                                </figure>
+                        </div>
+                    </div>
+
+                    <P>
+                        New deep learning models are needed to extend the expression of their relationship and mine intrinsic connections in the data, to improve the accuracy of recommendations. 
+                        The generation of a specified number of bundles is a future research direction.
+                    </P>
+                <br>
+                <br>
+
+            <h2>Problems in Recommender System</h2>
+            <hr>
+                <p> 
+                    Recommender systems face challenges in terms of robustness, data bias, and fairness. 
+                    Robustness is the ability to withstand adversarial attacks and eliminate the adverse effects of bias. 
+                    Adversarial attacks can take different forms, such as manipulating data, model parameters, or the output of an RS. Data bias results in a skewed snapshot of user preferences, causing suboptimal recommendations. 
+                    This can include popularity, selection, exposure, and position bias. 
+                    Fairness includes user- and project-based fairness. 
+                    In the case of userbased fairness, results are not affected by attributes such as race or gender. 
+                    Similar items of the same category should have equal chances of recommendation. 
+                    Typical fairness problems include cold-start and long-tail problems.
+                </p>
+                <P>
+                    This survey aims to deliver a comprehensive overview of the challenges encountered by RS in terms of robustness and fairness. 
+                    It discusses a range of existing methods and techniques devised to tackle these challenges, evaluating their respective strengths and limitations. 
+                    The paper provides insights into the current state of the field and suggests potential future directions for research in this area.
+                </P>
+
+                <p style="font-size: 21px;"><b>Robustness</b></p>
+                <hr width="11%" />
+                    <P>
+                        Adversarial attacks have become a popular method for validating the robustness of recommender systems. 
+                        Researchers often add perturbations to pixel values or text in image processing or natural language processing systems. 
+                        In a recommender system, an item or user can be represented as an embedding, which provides more attack options, including the use of information such as user and item profiles and embeddings, as well as side information.
+                    </P>
+                    <div class="flex-row">
+                        <div class="flex-row">
+                            <div class="flex-row" style="width: 65%;">
+                                <p style="width: 100%;">
+                                    There are both black-box and white-box attacks. 
+                                    In a white-box attack, the attacker has access to the model information and uses gradient-based methods to search for adversarial perturbations. 
+                                    In a black-box attack, the attacker lacks this information, and uses methods such as model substitution or DeepFool.
+                                    The right figure illustrates an attack on a referral RS through the addition of a fake user or item.
+                                </p>
+                            </div>
+                            <td>
+                                <figure style="width: 25%;">
+                                    <a href="assets/img/IVA.jpg">
+                                        <img width="100%" style="background-color:white" src="assets/img/IVA.jpg">
+                                    </a> 
+                                </figure>
+                        </div>
+                    </div>
+                    <P>
+                        In a Data Poisoning Attack (DPA), also known as a shilling or injection attack, the attacker knows the data but not the model information. 
+                        The goal is to inject fake users and ratings to change the recommendation list. 
+                        Although traditional association rule- and graph-based algorithms have been used to solve the DPA problem, few of these attacks perform well.
+                    </P>
+                    <p>
+                        Attacks on recommender systems can be targeted or nontargeted. 
+                        Targeted attacks aim to mislead the system from the true class to a specific incorrect one.
+                        Non-targeted attacks aim to compromise a model toward any class except the actual one. 
+                        While less explored than targeted attacks, they are critical in the assessment of robustness.
+                        Targeted attacks are often driven by explicit motives, while non-targeted attacks can undermine the accuracy of recommendations.
+                    </p>
+                    <p>
+
+                        Defense models, such as adversarial training and model distillation, are often used to improve robustness. 
+                        Adversarial training is generally a min-max game between an adversary and a model.
+                    </p>
+                    <p>
+                        In conclusion, adversarial training and model distillation are two commonly used defense models to enhance the robustness of recommender systems. 
+                        These methods address the challenge of robustness by adding perturbations and transferring knowledge, respectively.
+                    </p>
+                    <br>
+
+                <p style="font-size: 21px;"><b>Data Bias</b></p>
+                <hr width="9%" />
+                    <div class="flex-row">
+                        <div class="flex-row">
+                            <div class="flex-row" style="width: 65%;">
+                                <p style="width: 100%;">
+                                    Data bias in machine learning refers to the tendency and bias in a model due to imbalanced training data. 
+                                    Acquiring user behavior data for recommender systems through observation rather than experiments creates unavoidable deviations due to various factors.
+                                    Neglecting these deviations during RS design can inhibit model performance, affecting user experience and trust. Hence, eliminating bias is a crucial research area. 
+                                    RS bias can arise from popularity bias, selection bias and exposure bias. The right figure an example of selection bias.
+                                </p>
+                            </div>
+                            <td>
+                                <figure style="width: 20%;">
+                                    <a href="assets/img/IVB.jpg">
+                                        <img width="100%" style="background-color:white" src="assets/img/IVB.jpg">
+                                    </a> 
+                                </figure>
+                        </div>
+                    </div>
+                    <p>
+                        Popularity bias, also known as an item-based fairness issue or a long-tail problem, occurs when a limited number of highly popular items frequently interact with users, overshadowing lesser-known items. 
+                        This leads to an inclination to recommend these items, reducing personalization and causing unfair recommendations. 
+                        Methods to address popularity bias are discussed in Section IV-C.
+                    </p>
+                    <p>
+                        Selection bias refers to deviations caused by a user’s inability to completely rate each item. 
+                        Users tend to rate products they are interested in, or are very satisfied or dissatisfied with. 
+                        Bias occurs because most products do not fall into these categories.
+                    </p>
+                    <P>
+                        Exposure bias reflects that most users have limited time and can only see and interact with a portion of the items in the system. 
+                        Other items are unknown to the user, and there are items that the user really likes or dislikes; hence, certain deviations will occur.
+                    </P>
+                    <P>
+                        This paper contains a discussion of various forms of data bias, namely, popularity bias, selection bias, and exposure bias. 
+                        To mitigate these biases, researchers mainly rely on debiasing techniques, in addition to utilizing score calibration losses and propensity scores to improve model efficiency. 
+                        These approaches aim to increase user confidence and trust in the system by ensuring data fairness and reducing discriminatory outcomes.
+                    </P>
+                    <br>
+
+                <p style="font-size: 21px;"><b>Fairness</b></p>
+                <hr width="8%" />
+                    <p>
+
+                    </p>
+                    <div class="flex-row">
+                        <div class="flex-row">
+                            <div class="flex-row" style="width: 65%;">
+                                <p style="width: 100%;">
+                                    Fairness in recommender systems can be user- or projectbased. 
+                                    In the former case, the system should not discriminate against users because of their sensitive attributes, and in the latter case, each item should have an equal chance of recommendation. 
+                                    Referring to the right figure, cold-start and long-tail problems are typical cases of item-based fairness problems. The long-tail problem is also related to exposure bias.<br>
+                                </p>
+                                <p>
+                                    
+                                </p>
+                            </div>
+                            <td>
+                                <figure style="width: 20%;">
+                                    <a href="assets/img/IVC.jpg">
+                                        <img width="100%" style="background-color:white" src="assets/img/IVC.jpg">
+                                    </a> 
+                                </figure>
+                        </div>
+                    </div>
+                        <p style="font-size: 18px;"><b>User-Based Fairness</b></p>
+                        <P>
+                            Mainstream methods are mainly based on meta-learning, confrontation training, federated learning, reinforcement learning, and Transformer.
+                        </P>
+                        <P>
+                            It can be concluded that researchers are actively exploring different approaches to improve user-based fairness in machine learning models.
+                            Metalearning, adversarial training, differential privacy, and multiarmed bandit algorithms are being used to address fairness issues and protect user privacy. 
+                            Additionally, models like the Cold-Transformer are being developed to adaptively incorporate context-based embeddings to improve the accuracy of user preferences. 
+                            Overall, these studies demonstrate the importance of addressing user-based fairness in machine learning models and the potential benefits of implementing these approaches to improve service for under-served users while maintaining user privacy.
+                        </P>
+
+                        <p style="font-size: 18px;"><b>Item-Based Fairness</b></p>
+                        <P>
+                            Various methods have been proposed to address item-based fairness.
+                            Some approaches is based on adversarial training.
+                            Meta-learning and reinforcement learning are also used for item-based fairness.
+                        </P>
+                        <P>
+                            In conclusion, various methods have been proposed for item-based fairness in RS, including causal inference, adversarial training, meta-learning, and reinforcement learning. 
+                            Each method has its strengths and weaknesses, and the choice of method depends on the specific requirements of the RS system.
+                        </P>
+            <br>
+            <br>
+
+            <h2>Measurements</h2>
+            <hr>
+                <p>    
+                    There are different kinds of evaluation measurements for recommender systems, depending on the task. 
+                    These can be categorized as Rating Based Indicators (RBIs), and Item Based Indicators (IBIs). 
+                    An RBI rates the output of a recommender system. 
+                    A good recommendation can be inferred from a predicted rating that is close to the truth. 
+                    An IBI considers the output of a recommender system as a set or list of items. 
+                    A good recommendation is based on the user’s desired match between the predicted item and the target item.
+                </p>
+                <!-- <p style="font-size: 21px;"><b>Rating Based Indicator</b></p>
+                <hr width="21%" />
+                    <P>
+                        An RBI evaluates the quality of a prediction rating score. 
+                        The direct way is to calculate the gap between implicit and explicit labels.
+                    </P>
+                <p style="font-size: 21px;"><b>Item Based Indicator</b></p>
+                <hr width="19.5%" />
+                    <P>
+                        As a recommender system is a set or list of items, if there is no ranking information, the confusion matrix can be adopted for evaluation.
+                    </P> -->
+            <br>
+            <br>
+
+            <h2>Conclusion</h2>
+            <hr>
+            <p>
+                In conclusion, this survey comprehensively reviewed developments in recommender systems, a field that has seen significant recent progress. 
+                The diversity of recommender systems and their applications, combined with growing data volume and computing power, has created a rich, dynamic research environment. 
+                Recommender systems and Sentiment Analysis are two crucial applications of algorithms, and Malandri et al. have conducted a bibliometric analysis of research articles using structural topic modeling. 
+                In the past two decades, research focused on soft computing has shifted from recommender systems to sentiment analysis, and future research in this area is expected to use fuzzy logic for aspect-based sentiment analysis or sentiment knowledge-based reasoning.
+            </p>
+            <p>
+                This research started with an overview of current trends in personalized and group-based recommender systems. 
+                Regarding the former, conventional categorization has been expanded to encompass knowledge-based and LLM-based systems, which have witnessed a significant increase in popularity following recent advancements in deep learning. 
+                Personalized recommender system is categorized as collaborative filtering, content-based, knowledge-based, LLM-based, or hybrid.
+            </p>
+            <p>
+                This work considered the concept of group-based recommender systems, distinguishing between memory-based and model-based techniques. 
+                Item-oriented group recommendations, notably bundled recommendations, were discussed, and common challenges encountered by recommender systems were addressed, including robustness, data bias, and fairness. 
+                The performance metrics were analyzed based on ratings, ranking, and similarity.
+            </p>
+            <p>
+                The rich and dynamic research environment of recommender systems has been created by the diversity of its applications and the growing amount of data and computing resources available. 
+                Although the field still faces challenges, such as robustness, data bias, and fairness issues, the future of recommender systems holds great promise and the potential to greatly benefit the human race.
+            </p>
+            <br>
+            <br>
+
+
+        </section>
+        <section id="bibtex">
+            <h2>Citation</h2>
+            <hr>
+            <pre><code>
+                @article{li2023recent,
+                    title={Recent Developments in Recommender Systems: A Survey},
+                    author={Li, Yang and Liu, Kangbo and Satapathy, Ranjan and Wang, Suhang and Cambria, Erik},
+                    journal={arXiv preprint arXiv:2306.12680},
+                    year={2023}
+                  }
+            </code></pre>
+        </section>
+
+        <br />
+        <section id="paper">
+            <h2>Paper</h2>
+            <hr>
+            <div class="flex-row">
+                <div style="box-sizing: border-box; padding: 16px; margin: auto;">
+                    <a href="assets/img/active_preview.PNG"><img class="screenshot"
+                            src="assets/img/active_preview.PNG"></a>
+                </div>
+                <div style="width: 50%">
+                    <p><b></b></p>
+                    <p>
+                        <b>Recent Developments in Recommender Systems: A Survey</b>
+                    </p>
+                    <p>
+                        Yang Li, Kangbo Liu,<br>
+                         Ranjan Satapathy, Suhang Wang, Erik Cambria
+                    </p>
+                    <div><span class="material-icons"> description </span>
+                        <a
+                            href="https://openaccess.thecvf.com/content/ICCV2023/papers/Suryanto_ACTIVE_Towards_Highly_Transferable_3D_Physical_Camouflage_for_Universal_and_ICCV_2023_paper.pdf">
+                            Paper
+                        </a>
+                    </div>
+                    <!-- <div><span class="material-icons"> note_add </span>
+                        <a
+                            href="https://openaccess.thecvf.com/content/ICCV2023/supplemental/Suryanto_ACTIVE_Towards_Highly_ICCV_2023_supplemental.pdf">
+                            Supplementary
+                        </a>
+                    </div> -->
+                    <div><span class="material-icons"> description </span>
+                        <a href="https://arxiv.org/abs/2306.12680">
+                            ArXiv
+                        </a>
+                    </div>
+                    <div><span class="material-icons"> school </span>
+                        <a href="./bib.txt">
+                            BibTeX
+                        </a>
+                    </div>
+                    <div><span class="material-icons"> code </span>
+                        <a href="#">
+                            Materials and Docs ( Available soon )
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
