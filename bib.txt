@@ -1,0 +1,6 @@
+@article{li2023recent,
+  title={Recent Developments in Recommender Systems: A Survey},
+  author={Li, Yang and Liu, Kangbo and Satapathy, Ranjan and Wang, Suhang and Cambria, Erik},
+  journal={arXiv preprint arXiv:2306.12680},
+  year={2023}
+}
