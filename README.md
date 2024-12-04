@@ -2,7 +2,7 @@
 
 It is a webview for this survey, webpage is [here](https://aai-lab.github.io/Recent_Developments_in_Recommender_Systems_A_Survey).
 
-if you think this work is helpful, you can cite it as:
+If you think this work is helpful, you can cite it as:
 
 ```'''
 @article{li2024recent,
